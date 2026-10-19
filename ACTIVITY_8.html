@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian's Creatives - Home</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #F4F6F8;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+   
+        header {
+            background-color: black;
+
+            color: #ffffff;
+            padding: 18px 0;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .logo-circle {
+            width: 30px;
+            height: 30px;
+            background-color: #265c83;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffffff;
+        }
+
+     
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #f7f8f9;
+            width: 100%;
+            max-width: 600px;
+            padding: 45px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .card h2 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #b08d38;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+    
+        .avatar-row {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e2b742;
+            background-color: #ddd;
+        }
+
+        .card p {
+            font-size: 0.85rem;
+            color: #555555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .btn-action {
+            display: inline-block;
+            background-color: #2b2d31;
+            color: #ffffff;
+            padding: 10px 25px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn-action:hover {
+            background-color: #404249;
+        }
+
+      footer {
+    background-color: #1a1d20;
+    color: #ffffff; 
+    text-align: center;
+    padding: 6px 0; 
+    font-size: 0.7rem; 
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+
+   
+    <header>
+        <div class="logo-container">
+            <div class="logo-circle">IC</div>
+            <h1>Ian's Creatives</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="ABOUT_SECTION.html">About</a></li>
+                <li><a href="GALERRY_SECTION.html">Gallery</a></li>
+                <li><a href="CONTACT_SECTION.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+    <div class="content-wrapper">
+        <div class="card">
+            <h2>Experience The Creative</h2>
+            <div class="subtitle">Innovate • Design • Inspire</div>
+            
+            <div class="avatar-row">
+                <img src="image1.jpg" alt="Profile 1" class="avatar">
+                <img src="image2.jpg" alt="Profile 2" class="avatar">
+                <img src="image3.jpg" alt="Profile 3" class="avatar">
+            </div>
+
+            <p>Welcome to my creative portfolio. I specialize in web design, digital graphics, and UI/UX solutions. Through thoughtful layout structure, functional navigation, and modern aesthetics, I bring visual ideas to life.</p>
+            
+            <a href="ABOUT_SECTION.html" class="btn-action">Learn More</a>
+        </div>
+    </div>
+
+
+    <footer>
+        &copy; 2026 Padayao Zedric Creatives Creatives[cite: 6]
+    </footer>
+
+</body>
+</html>

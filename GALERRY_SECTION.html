@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian's Creatives - Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #F4F6F8;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        
+        header {
+            background-color: black;
+            color: #ffffff;
+            padding: 18px 0;
+            text-align: center;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #265c83;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+        nav ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #ffffff;
+        }
+
+       
+        .content-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+     
+        .card {
+            background-color: #f7f8f9;
+            width: 100%;
+            max-width: 750px;
+            padding: 40px 45px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+        }
+
+        .gallery-header {
+            margin-bottom: 30px;
+        }
+
+        .gallery-header h2 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #1a1a1a;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .gallery-header p {
+            font-size: 0.8rem;
+            color: #666666;
+        }
+
+  
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px 15px;
+            justify-items: center;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gallery-img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e2b742;
+            background-color: #ddd;
+            margin-bottom: 8px;
+        }
+
+        .gallery-item span {
+            font-size: 0.65rem;
+            font-weight: bold;
+            color: #555555;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+      
+        footer {
+            background-color: #1a1d20;
+            color: #ffffff;
+            text-align: center;
+            padding: 6px 0;
+            font-size: 0.7rem;
+            width: 100%;
+        }
+         .avatar {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #e2b742;
+            background-color: #ddd;
+        }
+        header h1 {
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        }
+
+       
+        nav ul li a {
+            color: #cccccc;
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding-bottom: 4px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: yellow;
+            border-bottom: 2px solid #ffffff;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo-area">
+            <img src="mini logo 3.png" alt="Profile 1" class="avatar">
+            <h1>Ian's Creatives</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ABOUT_SECTION.html">About</a></li>
+                <li><a href="GALERRY_SECTION.html">Gallery</a></li>
+                <li><a href="CONTACT_SECTION.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="content-wrapper">
+        <div class="card">
+            <div class="gallery-header">
+                <h2>Creative Portfolio</h2>
+                <p>A curated look at our latest collections and artistic ventures.</p>
+            </div>
+
+          
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="PJ 01.jpg" alt="Project 01" class="gallery-img">
+                    <span>PROJECT 01</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 02.jpg" alt="Project 02" class="gallery-img">
+                    <span>PROJECT 02</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 03.jpg" alt="Project 03" class="gallery-img">
+                    <span>PROJECT 03</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 04.jpg" alt="Project 04" class="gallery-img">
+                    <span>PROJECT 04</span>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PJ 05.jpg" alt="Project 05" class="gallery-img">
+                    <span>PROJECT 05</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 06.png" alt="Project 06" class="gallery-img">
+                    <span>PROJECT 06</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 07.jpg" alt="Project 07" class="gallery-img">
+                    <span>PROJECT 07</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 08.jpg" alt="Project 08" class="gallery-img">
+                    <span>PROJECT 08</span>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="PJ 09.jpg" alt="Project 09" class="gallery-img">
+                    <span>PROJECT 09</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 10.jpg" alt="Project 10" class="gallery-img">
+                    <span>PROJECT 10</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 11.jpg" alt="Project 11" class="gallery-img">
+                    <span>PROJECT 11</span>
+                </div>
+                <div class="gallery-item">
+                    <img src="PJ 12.jpg" alt="Project 12" class="gallery-img">
+                    <span>PROJECT 12</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        &copy; 2026 Padayao Zedric Creatives Creatives
+    </footer>
+
+</body>
+</html>
